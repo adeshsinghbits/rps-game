@@ -6,7 +6,8 @@ import paperImg from '../assets/paper.png';
 import scissorsImg from '../assets/scissors.png';
 import sadImg from '../assets/sad.png';
 import gameCoins from '../assets/gamecoin.webp';
-import { FaRedo } from 'react-icons/fa';
+import { FaRedo, FaUser,FaRobot } from 'react-icons/fa';
+import { IoTimeSharp } from "react-icons/io5";
 import { motion } from 'framer-motion';
 
 const icons = {
@@ -58,10 +59,10 @@ const Game = () => {
   return (
     <div  className="bg-gray-900 text-white p-4 h-screen">
       <div className="flex justify-between text-xl mb-4">
-        <div className="bg-slate-500 py-2 px-4 rounded">Player: {playerScore}</div>
-        <div className="bg-slate-500 py-2 px-4 rounded">CPU: {cpuScore}</div>
-        <div className="bg-slate-500 py-2 px-4 rounded" >Coins: <img src={gameCoins} alt="" className="w-6 inline-block"/>  {coins}</div>
-        <div className="bg-slate-500 py-2 px-4 rounded">Time Left: {timeLeft}s</div>
+        <div className="bg-slate-500 py-2 px-4 rounded"> <FaUser className="w-6 inline-block"/> Player: {playerScore}</div>
+        <div className="bg-slate-500 py-2 px-4 rounded"> <FaRobot className="w-6 inline-block"/> CPU: {cpuScore}</div>
+        <div className="bg-slate-500 py-2 px-4 rounded" >  <img src={gameCoins} alt="" className="w-6 inline-block"/> Coins: {coins}</div>
+        <div className="bg-slate-500 py-2 px-4 rounded"> <IoTimeSharp className="w-6 inline-block"/> Time Left: {timeLeft}s</div>
       </div>
 
       <div className="flex justify-between">

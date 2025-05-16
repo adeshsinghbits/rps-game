@@ -45,7 +45,7 @@ const History = () => {
   return (
     <>
       <h1 className="text-3xl font-bold mb-4 text-center">Game History</h1>
-      <div className="overflow-auto max-h-[60vh] rounded-lg shadow border border-gray-600">
+      <div className="overflow-auto fixed left-0 right-0 max-h-screen rounded-lg shadow border border-gray-600">
         <table className="w-full text-left text-sm table-auto">
           <thead className="bg-gray-700 sticky top-0 z-10">
             <tr>
